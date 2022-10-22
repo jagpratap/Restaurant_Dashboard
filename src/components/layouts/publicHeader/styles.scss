@@ -1,0 +1,31 @@
+.header {
+  padding: 0.75rem 0;
+  box-shadow: 0px 8px 10px -15px #000000;
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav_left {
+      .brand {
+        text-transform: uppercase;
+        color: #44924C;
+      }
+    }
+
+    .nav_right {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .login_text {
+        color: #000000;
+      }
+
+      .login_icon {
+        width: 2rem;
+      }
+    }
+  }
+}

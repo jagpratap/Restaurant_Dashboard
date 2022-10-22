@@ -5,7 +5,7 @@ import {
   Navigate,
 } from "react-router-dom";
 
-import Layout from "./layouts";
+import Layout from "./layouts/layout";
 
 import Home from "./pages/home";
 import Login from "./pages/auth/login";
@@ -43,7 +43,7 @@ const Router = () => (
         }) => (
           <Route {...props} element={<Component />} />
         ))}
-        <Route path="/" exact element={<Navigate to="/home" />} />
+        <Route path="/" exact element={<Navigate to="/auth/login" />} />
         <Route path="*" exact element={<Navigate to="/auth/pageNotFound" />} />
       </Routes>
     </Layout>
