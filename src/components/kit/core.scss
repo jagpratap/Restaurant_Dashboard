@@ -1,0 +1,60 @@
+/************* Initial CSS Resets *************/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration-style: none;
+  color: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/************* Initial CSS Resets *************/
+
+body {
+  font-family: $poppins-font-weight-400, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+}

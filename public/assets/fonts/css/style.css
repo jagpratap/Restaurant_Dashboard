@@ -1,0 +1,115 @@
+/*--------------------------POPPINS--------------------------*/
+
+/* 900 */
+@font-face {
+  font-family: "Poppins, Black";
+  src: url("../families/poppins/Poppins-Black.ttf") format("truetype");
+}
+
+/* 800 */
+@font-face {
+  font-family: "Poppins, Extra-Bold";
+  src: url("../families/poppins/Poppins-ExtraBold.ttf") format("truetype");
+}
+
+/* 700 */
+@font-face {
+  font-family: "Poppins, Bold";
+  src: url("../families/poppins/Poppins-Bold.ttf") format("truetype");
+}
+
+/* 600 */
+@font-face {
+  font-family: "Poppins, Semi-Bold";
+  src: url("../families/poppins/Poppins-SemiBold.ttf") format("truetype");
+}
+
+/* 500 */
+@font-face {
+  font-family: "Poppins, Medium";
+  src: url("../families/poppins/Poppins-Medium.ttf") format("truetype");
+}
+
+/* 400 */
+@font-face {
+  font-family: "Poppins, Regular";
+  src: url("../families/poppins/Poppins-Regular.ttf") format("truetype");
+}
+
+/* 300 */
+@font-face {
+  font-family: "Poppins, Light";
+  src: url("../families/poppins/Poppins-Light.ttf") format("truetype");
+}
+
+/* 200 */
+@font-face {
+  font-family: "Poppins, Extra-Light";
+  src: url("../families/poppins/Poppins-ExtraLight.ttf") format("truetype");
+}
+
+/* 100 */
+@font-face {
+  font-family: "Poppins, Thin";
+  src: url("../families/poppins/Poppins-Thin.ttf") format("truetype");
+}
+
+/*--------------------------POPPINS--------------------------*/
+
+/*--------------------------INTER--------------------------*/
+
+/* 900 */
+@font-face {
+  font-family: "Inter, Black";
+  src: url("../families/inter/Inter-Black.ttf") format("truetype");
+}
+
+/* 800 */
+@font-face {
+  font-family: "Inter, Extra-Bold";
+  src: url("../families/inter/Inter-ExtraBold.ttf") format("truetype");
+}
+
+/* 700 */
+@font-face {
+  font-family: "Inter, Bold";
+  src: url("../families/inter/Inter-Bold.ttf") format("truetype");
+}
+
+/* 600 */
+@font-face {
+  font-family: "Inter, Semi-Bold";
+  src: url("../families/inter/Inter-SemiBold.ttf") format("truetype");
+}
+
+/* 500 */
+@font-face {
+  font-family: "Inter, Medium";
+  src: url("../families/inter/Inter-Medium.ttf") format("truetype");
+}
+
+/* 400 */
+@font-face {
+  font-family: "Inter, Regular";
+  src: url("../families/inter/Inter-Regular.ttf") format("truetype");
+}
+
+/* 300 */
+@font-face {
+  font-family: "Inter, Light";
+  src: url("../families/inter/Inter-Light.ttf") format("truetype");
+}
+
+/* 200 */
+@font-face {
+  font-family: "Inter, Extra-Light";
+  src: url("../families/inter/Inter-ExtraLight.ttf") format("truetype");
+}
+
+/* 100 */
+@font-face {
+  font-family: "Inter, Thin";
+  src: url("../families/inter/Inter-Thin.ttf") format("truetype");
+}
+
+/*--------------------------INTER--------------------------*/
