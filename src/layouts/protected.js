@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-import ProtectedHeader from "../components/layouts/protectedHeader";
+import Dashboard from "../components/layouts/protected";
 
 const Protected = ({ children }) => {
   const navigate = useNavigate();
@@ -11,7 +11,7 @@ const Protected = ({ children }) => {
   }, []);
   return (
     <div>
-      <ProtectedHeader />
+      <Dashboard />
       {children}
     </div>
   );

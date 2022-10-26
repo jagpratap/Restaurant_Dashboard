@@ -1,0 +1,24 @@
+.sidebar-section {
+
+  .section-nav {
+    width: 15rem;
+    min-height: calc(100vh - 59px);
+    background-color: $neutral-400;
+
+    .nav-list {
+      width: 50%;
+      margin: 0 auto;
+      padding: 2rem 0;
+      text-align: center;
+      font-family: $poppins-font-weight-500;
+      color: $neutral-900;
+      text-transform: uppercase;
+
+      .list-item {
+        border-bottom: 1px solid $gray-900;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

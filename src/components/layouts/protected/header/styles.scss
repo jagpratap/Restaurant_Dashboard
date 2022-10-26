@@ -1,0 +1,35 @@
+.protected-header {
+  padding: 0.75rem 0;
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav_left {
+      .brand {
+        text-transform: uppercase;
+        font-family: $poppins-font-weight-500;
+        letter-spacing: 0.1rem;
+        color: $green-600;
+      }
+    }
+
+    .nav_right {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+
+      .logout_text {
+        font-family: $poppins-font-weight-600;
+        font-size: 1.25rem;
+        color: $neutral-900;
+      }
+
+      .logout_icon {
+        width: 2rem;
+        cursor: pointer;
+      }
+    }
+  }
+}

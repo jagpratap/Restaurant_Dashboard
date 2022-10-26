@@ -57,7 +57,7 @@ const Login = () => {
               password: "",
             });
             setLoading(false);
-            navigate("/home");
+            navigate("/dashboard/home");
             break;
           } else {
             setAuthentication(false);

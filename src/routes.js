@@ -5,19 +5,27 @@ import {
   Navigate,
 } from "react-router-dom";
 
-import Layout from "./layouts/layout";
+import Layout from "./layouts";
 
 import Home from "./pages/home";
+import Bookmarks from "./pages/bookmarks";
 import Login from "./pages/auth/login";
 import PageNotFound from "./pages/auth/pageNotFound";
 
 const routes = [
   {
     key: "HOME",
-    path: "/home",
+    path: "/dashboard/home",
     exact: true,
     component: Home,
   },
+  {
+    key: "BOOKMARKS",
+    path: "/dashboard/bookmarks",
+    exact: true,
+    component: Bookmarks,
+  },
+
   // AUTH ROUTES
   {
     key: "LOGIN",

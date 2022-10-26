@@ -1,13 +1,13 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-import PublicHeader from "../components/layouts/publicHeader";
+import PublicHeader from "../components/layouts/public/header";
 
 const Auth = ({ children }) => {
   const navigate = useNavigate();
   useEffect(() => {
     const localData = JSON.parse(localStorage.getItem("authStatus"));
-    if (localData) navigate("/home");
+    if (localData) navigate("/dashboard/home");
   }, []);
   return (
     <div>

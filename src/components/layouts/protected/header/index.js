@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { useUserContext } from "../../../context/userContext";
+import { useUserContext } from "../../../../context/userContext";
 
 const ProtectedHeader = () => {
   const navigate = useNavigate();
@@ -10,7 +10,7 @@ const ProtectedHeader = () => {
     navigate("/auth/login");
   };
   return (
-    <header className="header">
+    <header className="protected-header">
       <div className="container">
         <nav className="navbar">
           <div className="nav_left">

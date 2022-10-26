@@ -1,5 +1,5 @@
 const PublicHeader = () => (
-  <header className="header">
+  <header className="public-header">
     <div className="container">
       <nav className="navbar">
         <div className="nav_left">

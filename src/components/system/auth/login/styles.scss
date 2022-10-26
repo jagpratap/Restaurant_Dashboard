@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: $neutral-200;
 
   .page_card {
     width: 30rem;
@@ -24,11 +25,11 @@
       input {
         width: 25rem;
         padding: 0.75rem 2rem 0.75rem 3.5rem;
-        border: 1px solid $primary-white-shade-2;
+        border: 1px solid $neutral-400;
         border-radius: 0.5rem;
-        background: $primary-white-shade-1 no-repeat 1rem center;
+        background: $neutral-50 no-repeat 1rem center;
         font-family: $inter-font-weight-500;
-        color: $primary-black-shade-2;
+        color: $neutral-900;
       }
 
       input[type=text]:focus,
@@ -67,20 +68,21 @@
 
         input[type=submit] {
           cursor: pointer;
-          background-color: $primary-green-shade-0;
+          background-color: $green-600;
           padding: 0.75rem 2rem 0.75rem 2rem;
           text-transform: uppercase;
-          font-family: $inter-font-weight-600;
+          font-family: $inter-font-weight-700;
           font-size: 1.25rem;
-          color: $primary-white-shade-0;
+          letter-spacing: 0.1rem;
+          color: $white;
         }
 
         input[type=submit]:focus {
-          background-color: $primary-green-shade-1;
+          background-color: $green-700;
         }
 
         input[type=submit]:active {
-          background-color: $primary-green-shade-2;
+          background-color: $green-800;
         }
 
         /***** Loading Spinner *****/
@@ -98,8 +100,8 @@
           width: 1.25rem;
           height: 1.25rem;
           border-radius: 50%;
-          border: 2px solid $primary-blue-shade-0;
-          border-color: $primary-blue-shade-0 transparent $primary-blue-shade-0 transparent;
+          border: 2px solid $white;
+          border-color: $white transparent $white transparent;
           animation: lds-dual-ring 1.2s linear infinite;
         }
 
@@ -117,7 +119,8 @@
       }
 
       small {
-        color: red;
+        font-family: $inter-font-weight-400;
+        color: $red-600;
       }
 
     }
