@@ -1,8 +1,11 @@
 import { useNavigate } from "react-router-dom";
+import { useUserContext } from "../../../context/userContext";
 
 const ProtectedHeader = () => {
   const navigate = useNavigate();
-  const onClickHandler = () => {
+  const { setAuthentication } = useUserContext();
+  const onClickLogout = () => {
+    setAuthentication(false);
     localStorage.setItem("authStatus", JSON.stringify(false));
     navigate("/auth/login");
   };
@@ -19,8 +22,8 @@ const ProtectedHeader = () => {
               className="logout_icon"
               src="/assets/images/svg/logout.svg"
               alt="logout_icon"
-              onClick={onClickHandler}
-              onKeyDown={onClickHandler}
+              onClick={onClickLogout}
+              onKeyDown={onClickLogout}
             />
           </div>
         </nav>
