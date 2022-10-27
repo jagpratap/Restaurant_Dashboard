@@ -1,1 +1,99 @@
-// background-color: $neutral-200;
+.home-section {
+  min-height: calc(100vh - 59px);
+  width: calc(100vw - 240px);
+  background-color: $neutral-100;
+
+  .section-header {
+    width: 60%;
+    margin: 0 auto;
+    padding: 4rem 0;
+
+    .header-form {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      input {
+        padding: 0.75rem 2rem 0.75rem 3.5rem;
+        border: 1px solid $neutral-400;
+        border-radius: 0.5rem;
+        background: $neutral-50 no-repeat 1rem center;
+        font-family: $inter-font-weight-500;
+        color: $neutral-900;
+      }
+
+      input[type=search]:focus,
+      input[type=submit]:focus {
+        box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+        border: 1px solid rgba(81, 203, 238, 1);
+      }
+
+      input[type=search] {
+        width: 80%;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24' fill='%23595959'%3E%3Cpath d='m19.6 21-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5 7.625 5 6.312 6.312 5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z'/%3E%3C/svg%3E");
+      }
+
+      .submit_field {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        input[type=submit] {
+          cursor: pointer;
+          background-color: $green-600;
+          padding: 0.75rem 2rem 0.75rem 2rem;
+          text-transform: uppercase;
+          font-family: $inter-font-weight-700;
+          letter-spacing: 0.1rem;
+          color: $white;
+        }
+
+        input[type=submit]:focus {
+          background-color: $green-700;
+        }
+
+        input[type=submit]:active {
+          background-color: $green-800;
+        }
+
+        /***** Loading Spinner *****/
+        .lds-dual-ring {
+          display: inline-block;
+          width: 1rem;
+          height: 1rem;
+          position: absolute;
+          left: 0.5rem;
+        }
+
+        .lds-dual-ring:after {
+          content: " ";
+          display: block;
+          width: 1rem;
+          height: 1rem;
+          border-radius: 50%;
+          border: 2px solid $white;
+          border-color: $white transparent $white transparent;
+          animation: lds-dual-ring 1.2s linear infinite;
+        }
+
+        @keyframes lds-dual-ring {
+          0% {
+            transform: rotate(0deg);
+          }
+
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+
+        /***** Loading Spinner *****/
+      }
+
+      // small {
+      //   font-family: $inter-font-weight-400;
+      //   color: $red-600;
+      // }
+
+    }
+  }
+}
