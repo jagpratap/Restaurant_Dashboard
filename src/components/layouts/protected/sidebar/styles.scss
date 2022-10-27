@@ -18,6 +18,14 @@
         border-bottom: 1px solid $gray-900;
         padding-bottom: 0.5rem;
         margin-bottom: 1rem;
+
+        a {
+          color: $slate-600;
+        }
+
+        .active {
+          color: $neutral-900;
+        }
       }
     }
   }
