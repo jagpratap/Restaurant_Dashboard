@@ -1,7 +1,9 @@
 import React from "react";
 
 const Bookmarks = () => (
-  <div>Bookmarks</div>
+  <section className="bookmarks-section">
+    Bookmarks
+  </section>
 );
 
 export default Bookmarks;
