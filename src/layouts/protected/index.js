@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-import Dashboard from "../components/layouts/protected";
+import ProtectedHeader from "../../components/layouts/protected/header";
+import Sidebar from "../../components/layouts/protected/sidebar";
 
 const Protected = ({ children }) => {
   const navigate = useNavigate();
@@ -10,9 +11,12 @@ const Protected = ({ children }) => {
     if (!localData) navigate("/auth/login");
   }, []);
   return (
-    <div>
-      <Dashboard />
-      {children}
+    <div className="protected-layout">
+      <ProtectedHeader />
+      <main className="dashboard-page">
+        <Sidebar />
+        {children}
+      </main>
     </div>
   );
 };
