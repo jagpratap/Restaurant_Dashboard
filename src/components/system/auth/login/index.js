@@ -74,8 +74,7 @@ const Login = () => {
           }
         }
       })
-      .catch((error) => {
-        console.log("rejected =>", error);
+      .catch(() => {
       });
   };
 
