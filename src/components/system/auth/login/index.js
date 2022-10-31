@@ -2,12 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useUserContext } from "../../../../context/userContext";
 
-const apiAuthKey = process.env.REACT_APP_API_AUTHORIZATION_KEY;
-
 const getResponse = async () => {
   const response = await fetch("https://api.airtable.com/v0/appjWdL7YgpxIxCKA/credenitals?maxRecords=3&view=Grid%20view", {
     headers: {
-      Authorization: `Bearer ${apiAuthKey}`,
+      Authorization: "Bearer keyfXgn8PL6pB3x32",
     },
   });
   if (response.status !== 200) {
