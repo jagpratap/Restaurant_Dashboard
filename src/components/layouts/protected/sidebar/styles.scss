@@ -1,9 +1,9 @@
 .sidebar-section {
+  min-height: calc(100vh - 59px);
+  background-color: $neutral-400;
 
   .section-nav {
     width: 15rem;
-    min-height: calc(100vh - 59px);
-    background-color: $neutral-400;
 
     .nav-list {
       width: 50%;

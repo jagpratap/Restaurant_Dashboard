@@ -29,10 +29,12 @@ const Login = () => {
   const [isPasswordVisible, setPasswordVisible] = useState(false);
   const [areCredentialsMatches, setCredentialsMatches] = useState(true);
   const [isLoading, setLoading] = useState(false);
+
   useEffect(() => {
     // Set initial Focus to username field
     userNameRef.current.focus();
   }, []);
+
   const onChangeHandler = (event) => {
     const { name, value } = event.target;
     setFormData((prevFormData) => ({
@@ -40,6 +42,7 @@ const Login = () => {
       [name]: value,
     }));
   };
+
   const onSubmitHandler = (event) => {
     event.preventDefault();
     setLoading(true);
@@ -76,6 +79,7 @@ const Login = () => {
         console.log("rejected =>", error);
       });
   };
+
   return (
     <main className="login_page">
       <div className="page_card">
