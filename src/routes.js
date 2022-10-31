@@ -10,7 +10,6 @@ import Layout from "./layouts";
 import Home from "./pages/home";
 import Bookmarks from "./pages/bookmarks";
 import Login from "./pages/auth/login";
-import PageNotFound from "./pages/auth/pageNotFound";
 
 const routes = [
   {
@@ -33,12 +32,6 @@ const routes = [
     exact: true,
     component: Login,
   },
-  {
-    key: "PAGE_NOT_FOUND",
-    path: "/auth/pageNotFound",
-    exact: true,
-    component: PageNotFound,
-  },
 ];
 
 const Router = () => (
@@ -52,7 +45,6 @@ const Router = () => (
           <Route {...props} element={<Component />} />
         ))}
         <Route path="/" exact element={<Navigate to="/auth/login" />} />
-        <Route path="*" exact element={<Navigate to="/auth/pageNotFound" />} />
       </Routes>
     </Layout>
   </BrowserRouter>
